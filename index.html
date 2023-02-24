@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <title>Speck Academy 2023</title>
+  <link href="speck_css.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+
+  <div id="container">
+    <h1>My technologies</h1>
+
+    <input type="text" name="tehnologija_input" id="tehnologija_input" placeholder="Enter new technology...">
+    <button id="dodaj_tehnologiju_submit">Add</button>
+
+    <span id="obrisi_sve">Remove all items</span>
+
+    <div id="tehnologija">
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+
+  document.getElementById('dodaj_tehnologiju_submit').addEventListener('click', function() {
+    var naziv_tehnologije = document.getElementById('tehnologija_input').value;
+    const novi_element = document.createElement("p");
+    novi_element.innerHTML = naziv_tehnologije;
+    document.getElementById("tehnologija").appendChild(novi_element);
+    document.getElementById('tehnologija_input').value = "";
+    document.getElementById('tehnologija_input').placeholder = "Enter new technology...";
+  });
+
+  document.getElementById('obrisi_sve').addEventListener('click', function () {
+    document.getElementById("tehnologija").remove();
+    location.reload();
+  });
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1em;
+  font-style: normal;
+}
+
+h1{
+  font-size: 60px;
+}
+
+#container {
+  padding-top: 50px;
+  padding-left: 450px;
+  padding-right: 450px;
+}
+
+
+#tehnologija_input {
+  border:solid;
+  border-width:thin;
+  border-color: #96180f;
+  border-radius: 8px;
+  padding: 10px 30px;
+}
+
+button {
+  background-color: #fae2e1;
+  border: solid;
+  border-width: thin;
+  border-color: #96180f;
+  border-radius: 8px;
+  padding: 10px 30px;
+  color: #96180f;
+  text-align: center;
+  font-size: 16px;
+  margin-inline: 20px;
+  font-weight: 600;
+}
+
+button:hover{
+  background-color: #96180f;
+  color: white;
+}
+
+#obrisi_sve {
+  display: inline;
+  float: right;
+  color: #96180f;
+  text-decoration: underline;
+}
+
+#tehnologija {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+
+p {
+  border-radius: 8px;
+  height: 90px;
+  margin: 10px;
+  line-height: 90px;
+  text-align: center;
+  font-weight: 800;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
